@@ -22,8 +22,8 @@ The main objective of this lab was to explore EDR, using LimaCharlie, to detect 
 
 ### Steps
 
-- Deploy the Vms to be used in this project, I used a Windows box and an Ubuntu box. The Windows box was configured to be vulnerable by turning off Windows Defender via group policy.
-- Once the VMs were ready, I deployed a LimaCharlie sensor to the Windows Vm and configured LimaCharlie to collect Sysmon logs.
+- Deploy the Vms to be used in this project, I used a Windows box and an Ubuntu box. The Windows box was configured to be vulnerable by turning off Windows Defender via group policy
+- Once the VMs were ready, I deployed a LimaCharlie sensor to the Windows Vm and configured LimaCharlie to collect Sysmon logs
 
 ![image](https://github.com/user-attachments/assets/93d08a1d-7cc6-409d-be41-2bad77d4a88d)
 
@@ -38,7 +38,7 @@ The main objective of this lab was to explore EDR, using LimaCharlie, to detect 
 
   ![image](https://github.com/user-attachments/assets/85aab07b-ec82-4864-8aaa-d11dfb05900f)
 
-- Knowing that dumping the lsass.exe is captured as a sensitive process, I isolated the event in LimaCharlie, so that I could use it to make a D&R Rule alerting anytime the lsass.exe was accessed.
+- Knowing that dumping the lsass.exe is captured as a sensitive process, I isolated the event in LimaCharlie, so that I could use it to make a D&R Rule alerting anytime the lsass.exe was accessed
 
 ![image](https://github.com/user-attachments/assets/6cd91259-6fa9-4c4b-b056-a26db7360841)
 
@@ -48,7 +48,7 @@ The main objective of this lab was to explore EDR, using LimaCharlie, to detect 
 
 ![image](https://github.com/user-attachments/assets/f95b2acf-5574-4b51-a89a-9ce7e044ed03)
 
-- Going a step further and setting up a D&R Rule to block an attack, I performed an attack that is commonly associated with ransomware, being an attempt to delete volume shadow copies.
+- Going a step further and setting up a D&R Rule to block an attack, I performed an attack that is commonly associated with ransomware, being an attempt to delete volume shadow copies
 - Sigma Rules detect an attempt to delete colume shadow copies by default, so no need to make a rule to detect this attack, but I used the detection to shape a D&R Rule that will kill the process attempting to delete the shadow copies, in this case an admin shell
 
 ![image](https://github.com/user-attachments/assets/68c75329-84b4-4649-b146-f7e61b07da12)
