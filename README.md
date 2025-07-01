@@ -18,7 +18,7 @@ The main objective of this lab was to explore EDR, using LimaCharlie, to detect 
 - LimaCharlie EDR and SIEM
 - VMs
 - Malware
-- etc
+  
 
 ### Steps
 
