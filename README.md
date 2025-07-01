@@ -57,3 +57,14 @@ The main objective of this lab was to explore EDR, using LimaCharlie, to detect 
 
 ![image](https://github.com/user-attachments/assets/0bd4813d-ac29-4049-8a5d-aeedc215d45d)
 
+- The next step in this project is to create a YARA rule to identify Sliver, in order to automate our scans
+
+  ![image](https://github.com/user-attachments/assets/b7d01866-1d60-46a7-9e18-9394049c4fea)
+
+- After executing a manual scan using the YARA Rules on the downloads folder, we get a couple detections
+
+  ![image](https://github.com/user-attachments/assets/b0cbfea4-236e-4b01-ab88-a9f49bbd66e5)
+
+- Finally to test the automation of the YARA Rules, we execute the malware again and get another detection
+
+  ![image](https://github.com/user-attachments/assets/1d73c4ff-f232-4750-9206-4220d852c2d3)
