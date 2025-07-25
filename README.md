@@ -2,7 +2,7 @@
 
 ## Objective
 
-The main objective of this lab was to explore EDR, using LimaCharlie, to detect an attack. From detecting the attack, I then went on to creatre a blocking rule and finally into threat hunting with YARA rules.
+The main objective of this lab was to explore EDR, using LimaCharlie, to detect an attack. From detecting the attack, I then went on to create a blocking rule and finally into threat hunting with YARA rules.
   
 ### Skills Learned
 
